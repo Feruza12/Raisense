@@ -49,10 +49,10 @@ $(function () {
   $(window).scroll(function() {     
     var scroll = $(window).scrollTop();
     if (scroll > 40) {
-        $("#header").addClass("shadow");
+        $("#header").addClass("shadowing");
     }
     else {
-        $("#header").removeClass("shadow");
+        $("#header").removeClass("shadowing");
     }
 });
 
