@@ -11,7 +11,7 @@ $(function () {
     responsiveClass: true,
     autoplay: true,
     nav: true,
-    navText: ["<img src='./img/Icons/prev.png'>", "<img src='./img/Icons/next.png'>"],
+    navText: ["<img src='./img/Icons/prev.svg'>", "<img src='./img/Icons/next.svg'>"],
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
