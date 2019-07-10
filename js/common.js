@@ -38,12 +38,13 @@ $(function () {
   })
   $('.owl-two').owlCarousel({
     loop: true,
-    margin: 10,
+    stagePadding: 50,
+    margin: 30,
     dots: true,
     responsiveClass: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+    // autoplay: false,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
@@ -51,12 +52,12 @@ $(function () {
         dotsEach: true,
       },
       600: {
-        items: 1,
+        items: 2,
         dots: true,
         dotsEach: true,
       },
       1000: {
-        items: 2,
+        items: 4,
         dots: true,
         dotsEach: true,
         loop: true
@@ -64,13 +65,6 @@ $(function () {
     }
   })
 
-
-  // if ($(window).scrollTop() > 0) {
-  //   $("#header").addClass("shadow");
-  // }
-  // else {
-  //   $("#header").removeClass("shadow");
-  // }
 
   $(window).scroll(function() {     
     var scroll = $(window).scrollTop();
@@ -87,10 +81,8 @@ $("a").on('click', function(event) {
     event.preventDefault();
     var hash = this.hash; 
        $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 600, function(){
-      window.location.hash = hash;
-    });
+      scrollTop: $(hash).offset().top - 80
+    }, 'slow');
   } 
 });
 });
