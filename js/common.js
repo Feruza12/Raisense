@@ -37,7 +37,7 @@ $(function () {
     }
   })
   $('.owl-two').owlCarousel({
-    loop: true,
+    // loop: true,
     // stagePadding: 50,
     margin: 30,
     dots: true,
